@@ -17,6 +17,7 @@ const ExpenseForm = () => {
   };
   const submitHandler = (event) => {
     console.log({ enteredTitle, enteredAmount, enteredDate });
+    event.preventDefault();
   };
   return (
     <form>
@@ -54,3 +55,25 @@ const ExpenseForm = () => {
 };
 
 export default ExpenseForm;
+
+// const [userInput, setUserInput] = useState({
+//   enteredTitle: "",
+//   enteredAmount: "",
+//   enteredDate: "",
+// });
+
+// const titleChangeHandler = (event) => {
+//   setUserInput((prevState) => {
+//     return { ...prevState, enteredTitle: event.target.value };
+//   });
+// };
+// const amountChangeHandler = (event) => {
+//   setUserInput((prevState) => {
+//     return { ...prevState, enteredAmount: event.target.value };
+//   });
+// };
+// const dateChangeHandler = (event) => {
+//   setUserInput((prevState) => {
+//     return { ...prevState, enteredDate: event.target.value };
+//   });
+// };
