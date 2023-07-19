@@ -28,6 +28,7 @@ const ExpenseForm = (props) => {
     setEnteredTitle("");
     setEnteredAmount("");
     setEnteredDate("");
+    props.onCancel(true);
   };
 
   const cancelHandler = (event) =>{
