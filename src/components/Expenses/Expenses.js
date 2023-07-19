@@ -14,7 +14,7 @@ const Expenses = (props) => {
     return expense.date.getFullYear().toString() === filteredYear ;
   });
 
-  const expensesContent =  <p className="blank-expense">No Expenses Found!</p> ;
+  let expensesContent =  <p className="blank-expense">No Expenses Found!</p> ;
 
   if(filteredExpenses.length>0){
       expensesContent = filteredExpenses.map((item) => (
@@ -26,7 +26,7 @@ const Expenses = (props) => {
         />
       ));
   }
-  
+
   return (
     <div>
       <Card className="expenses">
