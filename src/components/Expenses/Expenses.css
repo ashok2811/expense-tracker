@@ -5,3 +5,13 @@
     width: 50rem;
     max-width: 95%;
   }
+
+.blank-expense{
+  padding: 1rem;
+  color: rgb(124, 80, 173);
+  background-color: rgb(235, 231, 223);
+  margin: 2rem auto;
+  width: 50rem;
+  max-width: 95%;
+  border-radius: 10px;
+}
